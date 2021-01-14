@@ -13,7 +13,7 @@ jobs:
           name: webpack artifacts
           path: public/
     
-    steps:
+    needs: build
       - uses: actions/checkout@v2
       - name: npm install and build webpack
         run: |
